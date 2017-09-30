@@ -1,0 +1,30 @@
+{
+  "name": "conversation-extension-framework",
+  "version": "0.1.2",
+  "main": "./index.js",
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "files": [
+    "src/"
+  ],
+  "author": "Angel Santiago",
+  "scripts": {
+    "start": "node ./example/server.js"
+  },
+  "repository": {},
+  "dependencies": {
+    "request": "2.81.0"
+  },
+  "devDependencies": {
+    "body-parser": "1.17.1",
+    "cfenv": "1.0.4",
+    "chance": "1.0.6",
+    "coveralls": "2.13.0",
+    "dotenv": "4.0.0",
+    "express": "4.15.2",
+    "ejs": "2.4.x"
+  },
+  "license": "Apache-2.0",
+  "description": "The Watson Conversation Extension Framework is a Node.js tool that allows developers quickly add dynamic functionality to their IBM Watson Conversation powered chatbots."
+}
