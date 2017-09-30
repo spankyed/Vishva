@@ -57,7 +57,7 @@ let processMessage = async function (incomingMessageText, userId, source, option
     processUtils.storeUserData(userId, source, userData.context, userData.privateContext, userData.responseOptions)
 
     // Check if the handler needs to make an API call
-    if (conversationResponse.output.apiCall) {
+    /*if (conversationResponse.output.apiCall) {
       let {field, destination} = getFieldAndDestination(conversationResponse.output.apiCall)
       let {context, privateContext} = {}
       try {
@@ -72,7 +72,8 @@ let processMessage = async function (incomingMessageText, userId, source, option
       // Otherwise check if we need to mark the next response
     } else {
       // Assign responseOptions so that we anticipate that the next user response
-      // will be assigned to this value
+      // will be assigned to this value.
+	  
       if (conversationResponse.output.updatesContext) {
         let {field, destination} = getFieldAndDestination(conversationResponse.output.updatesContext)
         // field is not an empty string and only contains chars
@@ -92,7 +93,7 @@ let processMessage = async function (incomingMessageText, userId, source, option
         delete userData.responseOptions.updatesContextField
         delete userData.responseOptions.updatesContextType
       }
-    }
+    } */
     if (userData.privateContext.transientData) {
       userData.transientData = userData.privateContext.transientData
       delete userData.privateContext.transientData

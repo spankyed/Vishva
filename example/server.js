@@ -1,6 +1,5 @@
 require('dotenv').config()
 let express = require('express')
-
 let bodyParser = require('body-parser')
 let cfenv = require('cfenv')
 
@@ -18,6 +17,7 @@ let conversationExtension = new (require('../'))(process.env.CONVERSATION_API_UR
 // output.apiCall: "diceRoll" or output.apiCall: "diceRoll:public" or "output.apiCall: "diceRoll:private"
 
 // Register the diceRoll API to 'diceRoll'
+
 conversationExtension.addAPI('diceRoll', require('./api/diceRoll').rollDice)
 
 // Initialize express
@@ -45,30 +45,28 @@ app.get('/', routes.index);
 // Mock Incoming message
 // body.text: message to send
 // body.user: 'user' sending the message
+
 app.post('/converse', async (req, res, next) => {
   // Send the incoming message through the conversation extension framework
 
-  // The framework will respond with {responseText, userData, conversationResponse}.
+  // The framework will respond with {responseText, userData}.
   // userData is made up of:
   // {
   //  context: The context object directly from conversation,
   //  privateContext: The private context for this user and source from the app
   // }
   console.log(arguments.caller);// undefined?
-  console.log('req', req.body.text)
-  res.status(200).send(await conversationExtension.handleIncoming(req.body.text, req.body.user, 'web'))
-  
+  console.log('req', req.body.text) 
+  res.status(200).send(await conversationExtension.handleIncoming(req.body.text, req.body.user, 'mock-api'))
+
   // Ideally here you would do something relevant to your incoming message source
   // and not just reply with this data. For instance, if this was an incoming
   // Slack message, you would reply to the user via Slack
-
 })
 
 // Start the server
-
-http.createServer(app).listen(cfenv.getAppEnv().port, '0.0.0.0', function() {
-	console.log('Server listening on port ' + cfenv.getAppEnv().port);  
-  
+app.listen(cfenv.getAppEnv().port, '0.0.0.0', function () {
+  console.log('Server Started on ' + cfenv.getAppEnv().port)
 })
 
 module.exports = app
