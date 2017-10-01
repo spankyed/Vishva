@@ -37,10 +37,10 @@ You: i guess
 #### Who will use is it?
 ⋅⋅⋅Lets say an employer wants to hire you.. They'd go to your website, see a 3D simulation of what your up to IRL, ask your chat bot— "Why should I hire you?"— get a relevant response. And then perhaps you'd be notified through a phone application that you have a potential job opportunity and you should intervene.
 
-⋅⋅⋅Or perhaps you haven't talked to Mom in a while. She can go to your site, see what you are doing, talk to your chatbo—
-On 2nd thought, you should probably still call Mom once a week.
+⋅⋅⋅Or perhaps, you haven't talked to Mom in a while. She can go to your site, see what you are doing, talk with your chatbo—
+on 2nd thought, you should probably still call Mom once a week.
 
-⋅⋅⋅But lets say your famous,  with an audience that wants to talk to you and find out what your up to.
+⋅⋅⋅Instead lets say your famous,  with an audience that wants to talk to you and find out what your up to.
 How many do you think you could meaningfully engage with, given any reasonable amount of time?
 
 
