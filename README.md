@@ -1,19 +1,19 @@
 # Vishva Private Network Framework (ALPHA)
-The Vishva PN Framework is a toolbox for personal networking. The main components of this toolbox are:
+The Vishva Framework is a toolbox for personal networking. The main components of this toolbox are:
 
--Chat bot framework, powered by IBM's Watson, capable of dynamic app functionality 
--3D world editor to create scenes of personal environments.
--Phone Application to recieve vital chat notifications, schedule scenes to be displayed, and act as a personal assistant.
+*Chat bot framework, powered by IBM's Watson, to add  a conversational interface with dynamic functionality 
+*3D world editor to create scenes of your personal environments.
+*Phone Application to recieve vital chat notifications, schedule scenes to be displayed, and act as a personal assistant.
 
 | Component | Status |
 | --- | --- |
-| Chat Bot Framework | In Dev |
-| World Editor | Not Started |
-| Phone Application | Not Started |
+| Chat Bot Framework | In Dev | Chat bot framework, powered by IBM's Watson, capable of dynamic functionality
+| World Editor | Not Started | 3D world editor to create scenes of personal environments.
+| Phone Application | Not Started | Phone Application to recieve vital chat notifications, schedule scenes to be displayed, and act as a personal assistant.
 
 
-#### What is the Vishva PN Framework?
-The Vishva PN Framework provides the tools to quickly get started building a personal platform to network with others, in an automated fashion. 
+#### What is the purpose of the Framework?
+To provide the tools to quickly get started building a personal platform to network with others- in an automated, yet meaningful, fashion. 
 ```
 You: wtf are you talking about
 Me:..
@@ -27,27 +27,25 @@ Me: U'd interact through chat bot
 Me: as if talking to me
 You: i guess
 ```
-
-Ideally, the Framework would consist of a chat bot framework, 3D World Editor, and phone application for administration.
 The framework begs to be extended and can only benefit from the addition of more advanced features. Currently, the framework provides:
 
-* External API Integrations handled through chat bot conversation
+* External API Integrations, triggerable through chat bot conversation
 * Private data storage (easily manage private data for Watson Conversation without sending it to the cloud)
 * Conversation and Context management is front-end agnostic; easily extend to other Front-Ends (Slack, Facebook Messenger)
 * Complex Javascript functions
 
 #### Who will use is it?
-Lets say an employer wants to hire you. They'd go to your website, see a 3D simulation of what your up to IRL, ask your chat bot- "Why should I hire you?", get a relevant response. And then perhaps you'd be notified through a phone application that you have a potential job opportunity and you should intervene.
+⋅⋅⋅Lets say an employer wants to hire you.. They'd go to your website, see a 3D simulation of what your up to IRL, ask your chat bot- "Why should I hire you?", get a relevant response. And then perhaps you'd be notified through a phone application that you have a potential job opportunity and you should intervene.
 
-Or lets say you have talked to Mom in a while. She'd go to your site, see what you are doing, talk to your chatbot..
+⋅⋅⋅Or perhaps you haven't talked to Mom in a while. She'd go to your site, see what you are doing, talk to your chatbo-
 On 2nd thought, you should probably still call Mom once a week.
 
-But lets say your famous, with an audience of people who want to talk to you and find out what your doing.
-How many do you think you could meaningfully engage with in any reasonable amount of time?
+⋅⋅⋅But lets say your famous,  with an audience that wants to talk to you and find out what your up to.
+How many do you think you could meaningfully engage with, given any reasonable amount of time?
 
 
 # Chat Bot Framework 
-Disclaimer: I can't attempt to vie in originiality with the [Pthoresen's] (https://github.com/pthoresen/conversation-extension-framework) original framework model.
+**_Disclaimer_: I can't attempt to vie in originiality with [Pthoresen's](https://github.com/pthoresen/conversation-extension-framework) original framework model.
 #### Ready to get started building the chat bot component ...?
 
 ## Requirements
@@ -287,5 +285,5 @@ Hasn't begun development. A potential starting point [Edit Control](https://gith
 # Phone Application
 Hasn't begun development.
 
-# UNKNOWN 4th COMPONENT?!?!?
+# UNKNOWN 4th Component?!?!
 Still working out feasbility.
