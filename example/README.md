@@ -1,7 +1,9 @@
 ## An Example
-Let's walk through the example
+Let's walk through some example application logic.
 
-There are two main pieces. First let's look at the implementation of the rollDice API in [/api/diceRoll.js](./api/diceRoll.js). This is just a demo API that will return a number from 1 to 6.
+Here we have some front-end code, a web-app to interface with user. As well as an internal api function.
+
+Let's look at the implementation of the rollDice API function in [/api/diceRoll.js](./api/diceRoll.js). This demo API that will return a number from 1 to 6.
 
 ```
 // Example API connection that returns a random dice roll after a short delay.

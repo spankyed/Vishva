@@ -1,17 +1,16 @@
 # Vishva Private Network Framework (ALPHA)
 The Vishva Framework is a toolbox for personal networking. The main components of this toolbox are:
 
-*Chat bot framework, powered by IBM's Watson, to add  a conversational interface with dynamic functionality 
-*3D world editor to create scenes of your personal environments.
-*Phone Application to recieve vital chat notifications, schedule scenes to be displayed, and act as a personal assistant.
-
 | Component | Status |
 | --- | --- |
-| Chat Bot Framework | In Dev | Chat bot framework, powered by IBM's Watson, capable of dynamic functionality
-| World Editor | Not Started | 3D world editor to create scenes of personal environments.
-| Phone Application | Not Started | Phone Application to recieve vital chat notifications, schedule scenes to be displayed, and act as a personal assistant.
+| Chat Bot Framework | In Dev | 
+| World Editor | *Not Started* | 
+| Phone Application | *Not Started* |
 
-
+* Chat bot framework, powered by IBM's Watson, to add  a conversational interface with dynamic functionality 
+* 3D world editor to create scenes of your personal environments.
+* Phone Application to recieve vital chat notifications, schedule scenes to be displayed, and act as a personal assistant.
+ 
 #### What is the purpose of the Framework?
 To provide the tools to quickly get started building a personal platform to network with others- in an automated, yet meaningful, fashion. 
 ```
@@ -42,10 +41,11 @@ On 2nd thought, you should probably still call Mom once a week.
 
 ⋅⋅⋅But lets say your famous,  with an audience that wants to talk to you and find out what your up to.
 How many do you think you could meaningfully engage with, given any reasonable amount of time?
-
+___
 
 # Chat Bot Framework 
-**_Disclaimer_: I can't attempt to vie in originiality with [Pthoresen's](https://github.com/pthoresen/conversation-extension-framework) original framework model.
+_Disclaimer_**: I can't attempt to vie in originiality with [Pthoresen's](https://github.com/pthoresen/conversation-extension-framework) original framework model.
+
 #### Ready to get started building the chat bot component ...?
 
 ## Requirements
@@ -103,7 +103,7 @@ I bet you want to use that variable in your conversation responses? To augment y
 in your response text in Bluemix. The framework will replace these tokens with the value of that variable no matter if it was stored in your Watson Conversation context or privately on your application!
 
 
-##Usage
+## Usage
 The chat bot framework is, at its core, an object. The class needs to be imported
 
 `let Conversation = require('conversation-framework')`
@@ -162,7 +162,7 @@ Once this `Promise` has resolved, there should be sufficient information to resp
 
 ## Managing User Data
 
-The framework manages two sets context information, *public* and *private*
+The framework manages two sets context information, *public* and *private*.
 
 **Public Context** is the context object that is sent to Watson Conversation as part of the request. It will be availabe inside of Watson Conversation through the standard API and will be visible in plain text through the application.
 
@@ -282,8 +282,10 @@ Separating the message processing logic from the mechanics of replying to a mess
 # 3D World Editor
 Hasn't begun development. A potential starting point [Edit Control](https://github.com/ssatguru/BabylonJS-EditControl)
 
+
 # Phone Application
 Hasn't begun development.
+
 
 # UNKNOWN 4th Component?!?!
 Still working out feasbility.
