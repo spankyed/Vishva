@@ -1,22 +1,21 @@
 # Vishva Private Network Framework (ALPHA)
 The Vishva Framework is a toolbox for personal networking. The main components of this toolbox are:
 
+<dl>
+  <dt>Chat Bot Framework</dt>
+  <dd>Powered by IBM's Watson, adds a conversational user interface with dynamic functionality </dd>
+  <dt>3D World Editor</dt>
+  <dd>Using BablyonJS game engine, to create scenes of your personal environments</dd>
+  <dt>Phone Application</dt>
+  <dd>To recieve vital chat notifications, schedule scenes to be displayed, and act as a personal assistant</dd> 
+</dl> 
+
 | Component | Status |
 | --- | --- |
 | Chat Bot Framework | In Dev | 
 | World Editor | *Not Started* | 
 | Phone Application | *Not Started* |
 
-<dl>
-  <dt>Chat Bot Framework</dt>
-  <dd>Powered by IBM's Watson, adds a conversational user interface with dynamic functionality </dd>
-  <dt>3D World Editor</dt>
-  <dd>To create scenes of your personal environments</dd>
-  <dt>Phone Application</dt>
-  <dd>To recieve vital chat notifications, schedule scenes to be displayed, and act as a personal assistant</dd> 
-</dl> 
- 
- 
 #### What is the purpose of the Framework?
 To provide the tools to quickly get started building a personal platform to network with others- in an automated, yet meaningful, fashion. 
 ```
@@ -32,12 +31,6 @@ Me: U'd interact through chat bot
 Me: as if talking to me
 You: i guess
 ```
-The framework begs to be extended and can benefit from the addition of more advanced features. Currently, the framework provides:
-
-* External API Integrations, triggerable through chat bot conversation
-* Private data storage (easily manage private data for Watson Conversation without sending it to the cloud)
-* Conversation and Context management is front-end agnostic; easily extend to other Front-Ends (Slack, Facebook Messenger)
-* Complex Javascript functions
 
 #### Who will use is it?
 ⋅⋅⋅Lets say an employer wants to hire you.. They'd go to your website, see a 3D simulation of what your up to IRL, ask your chat bot- "Why should I hire you?", get a relevant response. And then perhaps you'd be notified through a phone application that you have a potential job opportunity and you should intervene.
@@ -47,11 +40,17 @@ On 2nd thought, you should probably still call Mom once a week.
 
 ⋅⋅⋅But lets say your famous,  with an audience that wants to talk to you and find out what your up to.
 How many do you think you could meaningfully engage with, given any reasonable amount of time?
+
+The framework begs to be extended and can benefit from the addition of more advanced features. Currently, the framework provides:
+
+* External API Integrations, triggerable through chat bot conversation
+* Private data storage (easily manage private data for Watson Conversation without sending it to the cloud)
+* Conversation and Context management is front-end agnostic; easily extend to other Front-Ends (Slack, Facebook Messenger)
+* Complex Javascript functions
 ___
 
 # Chat Bot Framework 
-_Disclaimer_
- I can't attempt to vie in originiality with [Pthoresen's](https://github.com/pthoresen/conversation-extension-framework) original framework model.
+*_Disclaimer_: I can't attempt to vie in originiality with [Pthoresen's](https://github.com/pthoresen/conversation-extension-framework) original framework model.
 
 #### Ready to get started building the chat bot component ...?
 
