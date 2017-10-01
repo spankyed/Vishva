@@ -10,11 +10,13 @@ The Vishva Framework is a toolbox for personal networking. The main tools in thi
   <dd>To recieve vital chat notifications, schedule scenes to be displayed, and act as a personal assistant</dd> 
 </dl> 
 
+
 | Component | Status |
 | --- | --- |
 | Chat Bot Framework | In Devolpment | 
 | World Editor | *Not Started* | 
 | Phone Application | *Not Started* |
+
 
 #### What is the purpose of the Framework?
 To provide the tools to quickly get started building a personal platform to network with others— in an automated, yet meaningful, fashion. 
@@ -35,7 +37,7 @@ You: i guess
 #### Who will use is it?
 ⋅⋅⋅Lets say an employer wants to hire you.. They'd go to your website, see a 3D simulation of what your up to IRL, ask your chat bot— "Why should I hire you?"— get a relevant response. And then perhaps you'd be notified through a phone application that you have a potential job opportunity and you should intervene.
 
-⋅⋅⋅Or perhaps you haven't talked to Mom in a while. She'd go to your site, see what you are doing, talk to your chatbo-
+⋅⋅⋅Or perhaps you haven't talked to Mom in a while. She'd go to your site, see what you are doing, talk to your chatbo—
 On 2nd thought, you should probably still call Mom once a week.
 
 ⋅⋅⋅But lets say your famous,  with an audience that wants to talk to you and find out what your up to.
@@ -112,7 +114,7 @@ in your response text in Bluemix. The framework will replace these tokens with t
 
 
 ## Usage
-The chat bot framework is, at its core, an object. Here we will import the class..
+The chat bot framework is, at its core, an object. Here we will import the class.
 
 `let Conversation = require('conversation-framework')`
 
@@ -172,11 +174,11 @@ Once this `Promise` has resolved, there should be sufficient information to resp
 
 The framework manages two sets context information, *public* and *private*.
 
-**Public Context** is the context object that is sent to Watson Conversation as part of the request. It will be availabe inside of Watson Conversation through the standard API and will be visible in plain text through the application.
+**Public Context** is sent to Watson Conversation as part of the request. It will be availabe inside of Watson Conversation through the standard API and will be visible in plain text through the application.
 
-**Private Context** is maintained in the application's memory and is never sent to Watson Conversation. This makes it appropriate for data that may be sensitive, or simply if it's not important to send to Watson Conversation. When set through the updatesContext response property, it will also update public context with the corresponding value as 'true' to indicate that it is present in the private context.
+**Private Context** is maintained in the application's memory and is never sent to Watson Conversation. This makes it appropriate for data that may be sensitive, or if it's simply not important to it send to Watson Conversation. When set through the updatesContext response property, it will also update public context with the corresponding value as 'true' to indicate that it is present in the private context.
 
-Both *public* and *private* context can be used to store information to use in API calls as well as to augment the response to the user.
+Both *public* and *private* context can be used to store information for use in API calls, as well as, to augment the response displayed to the user.
 
 ### Storing User Response
 
