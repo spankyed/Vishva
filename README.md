@@ -2,8 +2,8 @@
 The Vishva Framework is a toolbox for personal networking. The main tools in this toolbox are:
 
 <dl>
-  <dt>Chat Bot Framework</dt>
-  <dd>Powered by IBM's Watson, adds a conversational user interface with dynamic functionality </dd>
+  <dt>Chat Bot</dt>
+  <dd>Powered by IBM's Watson, adds a conversational interface with dynamic functionality </dd>
   <dt>3D World Editor</dt>
   <dd>Using BablyonJS game engine, to create scenes of your personal environments</dd>
   <dt>Phone Application</dt>
@@ -13,7 +13,7 @@ The Vishva Framework is a toolbox for personal networking. The main tools in thi
 
 | Component | Status |
 | --- | --- |
-| Chat Bot Framework | In Devolpment | 
+| Chat Bot | In Devolpment | 
 | World Editor | *Not Started* | 
 | Phone Application | *Not Started* |
 
@@ -40,7 +40,7 @@ You: i guess
 ⋅⋅⋅Or perhaps, you haven't talked to Mom in a while. She can go to your site, see what you are doing, talk with your chatbo—
 on 2nd thought, you should probably still call Mom once a week.
 
-⋅⋅⋅Instead lets say your famous,  with an audience that wants to talk to you and find out what your up to.
+⋅⋅⋅Instead of not having called Mom in a while, lets say your famous, with an audience that wants to talk to you and find out what your up to.
 How many do you think you could meaningfully engage with, given any reasonable amount of time?
 
 
@@ -53,8 +53,8 @@ The framework begs to be extended and can benefit from the addition of more adva
 * Complex Javascript functions
 ___
 
-# Chat Bot Framework 
-_Disclaimer_— I can't attempt to vie in originiality with [Pthoresen's](https://github.com/pthoresen/conversation-extension-framework) original framework model.
+# Chat Bot  
+_Disclaimer_— I cannot attempt to vie in originiality with [Pthoresen's](https://github.com/pthoresen/conversation-extension-framework) original framework model.
 
 #### Ready to get started building the chat bot component ...?
 
@@ -67,7 +67,7 @@ The Node.js 7.6+ requirement is a hard requirement as this time. It's possible t
 
 ## Architecture Overview
 
-When building your application, the chat bot framework expects the following application flow.
+When building your chat bot application, the conversation-framework expects the following application flow.
 
 ```                                                               (object)
        Client          |      Application logic     |      Conversation-Framework         |   Extensional Systems
