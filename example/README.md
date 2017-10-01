@@ -1,14 +1,15 @@
 ## An Example
 Let's walk through some example application logic.
 
-Here we have some front-end code, a web-app to interface with user. As well as an internal api function.
+Here we have a web-app to interface with user. As well as, an internal api function.
 
-Let's look at the implementation of the rollDice API function in [/api/diceRoll.js](./api/diceRoll.js). This demo API that will return a number from 1 to 6.
+Let's look at the implementation of the rollDice API function in [/api/diceRoll.js](./api/diceRoll.js). This demo API will return a number from 1 to 6.
 
 ```
 // Example API connection that returns a random dice roll after a short delay.
 // Important that these API connections return a Promise!
 // This promise should promise to return an updated context and private context
+
 let rollDice = function (usePrivate, context, privateContext) {
   return rollPromise().then((roll) => {
     if (usePrivate) {
@@ -33,9 +34,9 @@ module.exports = {
 }
 ```
 
-If the API is called from Watson Conversation using `output.apiCall` as 'diceRoll' it will update context.diceRoll with the result. If it is called using `output.apiCall` as 'diceRoll:private', the usePrivate boolean will be set to true, and it will update privateContext.diceRoll with the result.
+If an APi call is sent back from Watson Conversation json using `output.apiCall: diceRoll' it will update context.diceRoll with the result. If it is called using `output.apiCall` as 'diceRoll:private', the usePrivate boolean will be set to true, and it will update privateContext.diceRoll with the result.
 
-First the `conversationExtension` class is initialized with the Watson Conversation credentials
+First we create an object of the  `conversationExtension` class, and initialize it with the Watson Conversation credentials
 
 `let onversation = new (require('../'))(process.env.CONVERSATION_API_URL, process.env.CONVERSATION_API_USER, process.env.CONVERSATION_API_PASSWORD)`
 

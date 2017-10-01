@@ -7,9 +7,15 @@ The Vishva Framework is a toolbox for personal networking. The main components o
 | World Editor | *Not Started* | 
 | Phone Application | *Not Started* |
 
-* Chat bot framework, powered by IBM's Watson, to add  a conversational interface with dynamic functionality 
-* 3D world editor to create scenes of your personal environments.
-* Phone Application to recieve vital chat notifications, schedule scenes to be displayed, and act as a personal assistant.
+<dl>
+  <dt>Chat Bot Framework</dt>
+  <dd>Powered by IBM's Watson, adds a conversational user interface with dynamic functionality </dd>
+  <dt>3D World Editor</dt>
+  <dd>To create scenes of your personal environments</dd>
+  <dt>Phone Application</dt>
+  <dd>To recieve vital chat notifications, schedule scenes to be displayed, and act as a personal assistant</dd> 
+</dl> 
+ 
  
 #### What is the purpose of the Framework?
 To provide the tools to quickly get started building a personal platform to network with others- in an automated, yet meaningful, fashion. 
@@ -26,7 +32,7 @@ Me: U'd interact through chat bot
 Me: as if talking to me
 You: i guess
 ```
-The framework begs to be extended and can only benefit from the addition of more advanced features. Currently, the framework provides:
+The framework begs to be extended and can benefit from the addition of more advanced features. Currently, the framework provides:
 
 * External API Integrations, triggerable through chat bot conversation
 * Private data storage (easily manage private data for Watson Conversation without sending it to the cloud)
@@ -44,7 +50,8 @@ How many do you think you could meaningfully engage with, given any reasonable a
 ___
 
 # Chat Bot Framework 
-_Disclaimer_**: I can't attempt to vie in originiality with [Pthoresen's](https://github.com/pthoresen/conversation-extension-framework) original framework model.
+_Disclaimer_
+ I can't attempt to vie in originiality with [Pthoresen's](https://github.com/pthoresen/conversation-extension-framework) original framework model.
 
 #### Ready to get started building the chat bot component ...?
 
@@ -59,16 +66,16 @@ The Node.js 7.6+ requirement is a hard requirement as this time. It's possible t
 
 When building your application, the chat bot framework expects the following application flow
 
-```                                                            (object)
-Client                 |     Application logic     |     conversation-framework         |   Extensional Systems
+```                                                               (object)
+       Client          |      Application logic     |      Conversation-Framework         |   Extensional Systems
 
-User sends a message --------> Message Received ---------> handleIncoming() -------------|--> Watson Conversation
-                                                                                         |
-                                                                                         |--> External/Database API
-                                                                                         |
-                             Complex JS Functions <--------------------------------------|
-                                                                                         |
-User receives a message <-- Send Response to Client <-- Augment conversation response <--|
+User types a message --------> Message Received ---------->  handleIncoming() ------------|--> Watson Conversation
+                       |                            |                                     |
+                       |                            |                                     |--> External/Database API
+                       |                            |                                     |
+                       |     Complex JS Functions  <--------------------------------------|
+                       |                            |                                     |
+User receives a message <-- Send Response to Client <-- Augment conversation response <---|
 ```
 
 ##### Want to make a call to an external API- lets say, a phone application?
