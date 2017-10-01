@@ -1,4 +1,4 @@
-# Vishva Private Network Framework (ALPHA)
+# Vishva Private Network Framework (*ALPHA*)
 The Vishva Framework is a toolbox for personal networking. The main components of this toolbox are:
 
 <dl>
@@ -41,8 +41,10 @@ On 2nd thought, you should probably still call Mom once a week.
 ⋅⋅⋅But lets say your famous,  with an audience that wants to talk to you and find out what your up to.
 How many do you think you could meaningfully engage with, given any reasonable amount of time?
 
-The framework begs to be extended and can benefit from the addition of more advanced features. Currently, the framework provides:
 
+#### Where are key features?
+The framework begs to be extended and can benefit from the addition of more advanced features. Currently, the framework provides:
+* Web Application to recieve user input and display response from Watson
 * External API Integrations, triggerable through chat bot conversation
 * Private data storage (easily manage private data for Watson Conversation without sending it to the cloud)
 * Conversation and Context management is front-end agnostic; easily extend to other Front-Ends (Slack, Facebook Messenger)
@@ -50,7 +52,7 @@ The framework begs to be extended and can benefit from the addition of more adva
 ___
 
 # Chat Bot Framework 
-*_Disclaimer_: I can't attempt to vie in originiality with [Pthoresen's](https://github.com/pthoresen/conversation-extension-framework) original framework model.
+_Disclaimer_: I can't attempt to vie in originiality with [Pthoresen's](https://github.com/pthoresen/conversation-extension-framework) original framework model.
 
 #### Ready to get started building the chat bot component ...?
 
@@ -286,7 +288,7 @@ Separating the message processing logic from the mechanics of replying to a mess
 
 
 # 3D World Editor
-Hasn't begun development. A potential starting point [Edit Control](https://github.com/ssatguru/BabylonJS-EditControl)
+Hasn't begun development. A potential starting point [Edit Control](https://github.com/ssatguru/BabylonJS-EditControl).
 
 
 # Phone Application
@@ -294,4 +296,4 @@ Hasn't begun development.
 
 
 # UNKNOWN 4th Component?!?!
-Still working out feasbility.
+Still considering feasbility.
