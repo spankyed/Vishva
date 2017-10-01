@@ -29,14 +29,14 @@ You: i guess
 ```
 
 Ideally, the Framework would consist of a chat bot framework, 3D World Editor, and phone application for administration.
-The framework begs to be extended and can only benefit from the addition of more advanced features. Currently, it provides the ability to:
+The framework begs to be extended and can only benefit from the addition of more advanced features. Currently, the framework provides:
 
 * External API Integrations handled through chat bot conversation
 * Private data storage (easily manage private data for Watson Conversation without sending it to the cloud)
 * Conversation and Context management is front-end agnostic; easily extend to other Front-Ends (Slack, Facebook Messenger)
 * Complex Javascript functions
 
-#### Who Will use is it?
+#### Who will use is it?
 Lets say an employer wants to hire you. They'd go to your website, see a 3D simulation of what your up to IRL, ask your chat bot- "Why should I hire you?", get a relevant response. And then perhaps you'd be notified through a phone application that you have a potential job opportunity and you should intervene.
 
 Or lets say you have talked to Mom in a while. She'd go to your site, see what you are doing, talk to your chatbot..
@@ -71,7 +71,7 @@ User sends a message --------> Message Received ---------> handleIncoming() ----
                              Complex JS Functions <--------------------------------------|
                                                                                          |
 User receives a message <-- Send Response to Client <-- Augment conversation response <--|
-
+```
 
 ##### Want to make a call to an external API- lets say, a phone application?
 ```
