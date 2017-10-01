@@ -1,5 +1,5 @@
 # Vishva Private Network Framework (*ALPHA*)
-The Vishva Framework is a toolbox for personal networking. The main components of this toolbox are:
+The Vishva Framework is a toolbox for personal networking. The main tools in this toolbox are:
 
 <dl>
   <dt>Chat Bot Framework</dt>
@@ -12,20 +12,20 @@ The Vishva Framework is a toolbox for personal networking. The main components o
 
 | Component | Status |
 | --- | --- |
-| Chat Bot Framework | In Dev | 
+| Chat Bot Framework | In Devolpment | 
 | World Editor | *Not Started* | 
 | Phone Application | *Not Started* |
 
 #### What is the purpose of the Framework?
-To provide the tools to quickly get started building a personal platform to network with others- in an automated, yet meaningful, fashion. 
+To provide the tools to quickly get started building a personal platform to network with others— in an automated, yet meaningful, fashion. 
 ```
 You: wtf are you talking about
 Me:..
-Me: you ever play the game 'The Sims'. or heard of
+Me: you ever play the game "The Sims". or heard of
 You: Who hasn't..
 Me: So this is the idea:
 Me: I have a sim on the web doing what I'm doing IRL
-Me: rn im at home, in my room, typing away on computer
+Me: righ now im at home, in my room, typing away on computer
 Me: U'd go to my website and be able to see this
 Me: U'd interact through chat bot
 Me: as if talking to me
@@ -33,7 +33,7 @@ You: i guess
 ```
 
 #### Who will use is it?
-⋅⋅⋅Lets say an employer wants to hire you.. They'd go to your website, see a 3D simulation of what your up to IRL, ask your chat bot- "Why should I hire you?", get a relevant response. And then perhaps you'd be notified through a phone application that you have a potential job opportunity and you should intervene.
+⋅⋅⋅Lets say an employer wants to hire you.. They'd go to your website, see a 3D simulation of what your up to IRL, ask your chat bot— "Why should I hire you?"— get a relevant response. And then perhaps you'd be notified through a phone application that you have a potential job opportunity and you should intervene.
 
 ⋅⋅⋅Or perhaps you haven't talked to Mom in a while. She'd go to your site, see what you are doing, talk to your chatbo-
 On 2nd thought, you should probably still call Mom once a week.
@@ -42,7 +42,7 @@ On 2nd thought, you should probably still call Mom once a week.
 How many do you think you could meaningfully engage with, given any reasonable amount of time?
 
 
-#### Where are key features?
+#### What are the key features?
 The framework begs to be extended and can benefit from the addition of more advanced features. Currently, the framework provides:
 * Web Application to recieve user input and display response from Watson
 * External API Integrations, triggerable through chat bot conversation
@@ -52,7 +52,7 @@ The framework begs to be extended and can benefit from the addition of more adva
 ___
 
 # Chat Bot Framework 
-_Disclaimer_: I can't attempt to vie in originiality with [Pthoresen's](https://github.com/pthoresen/conversation-extension-framework) original framework model.
+_Disclaimer_— I can't attempt to vie in originiality with [Pthoresen's](https://github.com/pthoresen/conversation-extension-framework) original framework model.
 
 #### Ready to get started building the chat bot component ...?
 
@@ -65,7 +65,7 @@ The Node.js 7.6+ requirement is a hard requirement as this time. It's possible t
 
 ## Architecture Overview
 
-When building your application, the chat bot framework expects the following application flow
+When building your application, the chat bot framework expects the following application flow.
 
 ```                                                               (object)
        Client          |      Application logic     |      Conversation-Framework         |   Extensional Systems
@@ -112,11 +112,11 @@ in your response text in Bluemix. The framework will replace these tokens with t
 
 
 ## Usage
-The chat bot framework is, at its core, an object. The class needs to be imported
+The chat bot framework is, at its core, an object. Here we will import the class..
 
 `let Conversation = require('conversation-framework')`
 
-and then initialized
+and then initialize it
 
 `let chat = new Conversation(conversationUrl, conversationUser, conversationPassword)`
 
