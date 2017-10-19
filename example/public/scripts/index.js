@@ -96,6 +96,8 @@ var Message = function (arg) {
         }(this);
         return this;
     };
+
+	//not used?
 var getMessageText, message_side, sendMessage;
         message_side = 'right';
         getMessageText = function () {
@@ -103,6 +105,7 @@ var getMessageText, message_side, sendMessage;
             $message_input = $('.message_input');
             return $message_input.val();
         };
+		
 var sendMessage = function (text, letter) { //letter = message_side
             var $messages, message;
             $('.message_input').val(''); //clear message input
@@ -121,7 +124,7 @@ var sendMessage = function (text, letter) { //letter = message_side
             return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 1000);
         };
 
-//do u need this?
+// intial conversation request
 converse();
 
 });

@@ -7,7 +7,7 @@ body {
     font-family: "Calibri", "Roboto", sans-serif;
 }
 
-.chat_window { /*Campo do meio, espaço vazio das mensagens*/
+.chat_window { /*mess with this shit: Campo do meio, espaço vazio das mensagens*/
   position: absolute;
   bottom:2px;
   width: 70%;

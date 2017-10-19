@@ -34,7 +34,7 @@ module.exports = {
 }
 ```
 
-If an APi call is sent back from Watson Conversation json using `output.apiCall: diceRoll' it will update context.diceRoll with the result. If it is called using `output.apiCall` as 'diceRoll:private', the usePrivate boolean will be set to true, and it will update privateContext.diceRoll with the result.
+If an API call is recognized from the json sent back from Watson Conversation using `output.apiCall: diceRoll' it will update context.diceRoll with the result. If it is called using `output.apiCall` as 'diceRoll:private', the usePrivate boolean will be set to true, and it will update privateContext.diceRoll with the result.
 
 First we create an object of the  `conversationExtension` class, and initialize it with the Watson Conversation credentials
 

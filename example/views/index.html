@@ -2,6 +2,10 @@
 <html>
 <head>
 <title>Extended Conversation</title>
+
+	<script src="bablyon.js"></script>
+	
+	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -11,29 +15,99 @@
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/index.js"></script>
+	
+ <style>
+        html, body {
+            overflow: hidden;
+            width   : 100%;
+            height  : 100%;
+            margin  : 0;
+            padding : 0;
+        }
 
+        #renderCanvas {
+            width   : 100%;
+            height  : 100%;
+            touch-action: none;
+        }
+    </style>
+	
 </head>
 <body>
-<div class="container">
-	<div class="row">
-		<div class="chat_window">
-			<ul class="messages"></ul>
-			<div class="bottom_wrapper clearfix">
-				<div class="message_input_wrapper">
-					<input class="message_input" id="chat" placeholder="Type here..." />
+    <canvas id="renderCanvas"></canvas>
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+            // get the canvas DOM element
+            var canvas = document.getElementById('renderCanvas');
+
+            // load the 3D engine
+            var engine = new BABYLON.Engine(canvas, true);
+
+            // createScene function that creates and return the scene
+            var createScene = function(){
+                // create a basic BJS Scene object
+                var scene = new BABYLON.Scene(engine);
+
+                // create a FreeCamera, and set its position to (x:0, y:5, z:-10)
+                var camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(0, 5,-10), scene);
+
+                // target the camera to scene origin
+                camera.setTarget(BABYLON.Vector3.Zero());
+
+                // attach the camera to the canvas
+                camera.attachControl(canvas, false);
+
+                // create a basic light, aiming 0,1,0 - meaning, to the sky
+                var light = new BABYLON.HemisphericLight('light1', new BABYLON.Vector3(0,1,0), scene);
+
+                // create a built-in "sphere" shape; its constructor takes 5 params: name, width, depth, subdivisions, scene
+                var sphere = BABYLON.Mesh.CreateSphere('sphere1', 16, 2, scene);
+
+                // move the sphere upward 1/2 of its height
+                sphere.position.y = 1;
+
+                // create a built-in "ground" shape; its constructor takes the same 5 params as the sphere's one
+                var ground = BABYLON.Mesh.CreateGround('ground1', 6, 6, 2, scene);
+
+                // return the created scene
+                return scene;
+            }
+
+            // call the createScene function
+            var scene = createScene();
+
+            // run the render loop
+            engine.runRenderLoop(function(){
+                scene.render();
+            });
+
+            // the canvas/window resize event handler
+            window.addEventListener('resize', function(){
+                engine.resize();
+            });
+        });
+    </script>
+	
+	<div class="container">
+		<div class="row">
+			<div class="chat_window">
+				<ul class="messages"></ul>
+				<div class="bottom_wrapper clearfix">
+					<div class="message_input_wrapper">
+						<input class="message_input" id="chat" placeholder="Type here..." />
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="message_template">
+			<li class="message">
+				<div class="avatar"></div>
+				<div class="text_wrapper">
+					<div class="text"></div>
+				</div>
+			</li>
+		</div>
 	</div>
-	<div class="message_template">
-		<li class="message">
-			<div class="avatar"></div>
-			<div class="text_wrapper">
-				<div class="text"></div>
-			</div>
-		</li>
-	</div>
-</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </body>
