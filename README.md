@@ -1,5 +1,5 @@
 <p align="center">
-This is a _proof of concept_ AND _a work in progress_, don't share the word, yet.
+This is a proof of concept AND a work in progress, don't share the word, yet.
 </p>
 
 <p align="center">	
