@@ -21,8 +21,8 @@ The Vishva Framework is a toolbox for personal networking. The main tools in thi
 
 | Component | Status |
 | --- | --- |
-| Chat Bot | In Devolpment | 
-| World Editor | *Not Started* | 
+| Chat Bot | In Development | 
+| World Editor | In Development | 
 | Phone Application | *Not Started* |
 
 
