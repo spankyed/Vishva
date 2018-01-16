@@ -1,10 +1,8 @@
 # Vishva Private Network Framework (*ALPHA*)
-This is a proof of concept AND a work in progress, don't share the word, yet.
 <p align="center">
+This is a proof of concept AND a work in progress, don't share the word, yet.
 <img style="width:100%" src="https://cloud.githubusercontent.com/assets/138050/6541935/e75fa8cc-c4e8-11e4-9cf2-a1a04fc05816.gif">
 </p>
-
-
 The Vishva Framework is a toolbox for personal networking. The main tools in this toolbox are:
 
 <dl>
